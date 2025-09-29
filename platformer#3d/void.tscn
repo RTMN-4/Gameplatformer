@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlhy48stoo8qw"]
+
+[ext_resource type="Script" uid="uid://b46k2ecrxmhch" path="res://void.gd" id="1_u8be3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u8be3"]
+
+[node name="killZone" type="Area3D"]
+script = ExtResource("1_u8be3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 0.2, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_u8be3")

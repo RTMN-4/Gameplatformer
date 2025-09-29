@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu8i467wuq6l1"]
+
+[ext_resource type="PackedScene" uid="uid://by54qtwijk411" path="res://coin.tscn" id="1_6teor"]
+[ext_resource type="Script" uid="uid://chvn3ussqast1" path="res://coind_2.gd" id="1_texjg"]
+
+[node name="Node3D" type="Area3D"]
+script = ExtResource("1_texjg")
+
+[node name="coin" parent="." instance=ExtResource("1_6teor")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0683694, 0, -0.38397)
